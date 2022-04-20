@@ -37,7 +37,9 @@ body {
     z-index: 2;
     width: 60%;
     font-family: Lora;
+    transform: translateY(-30%);
 }
+
 
 .opening .title h1 {
     font-size: 4rem;
