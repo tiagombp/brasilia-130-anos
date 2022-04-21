@@ -89,8 +89,64 @@ strong.quote-author {
 
 address {
     margin-top: 4rem;
-    text-align: right;
+    text-align: center;
 }
+
+hr {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.section-fotos h2 {
+    margin-bottom: 0;
+}
+
+.autor-fotos {
+    margin-top: 0;
+    font-style: italic;
+}
+
+.galeria {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    gap: 10px;
+    grid-template-areas: 
+    "juscelino juscelino"
+    "glory por-do-sol-vermelho"
+    "estrela bandeira"
+    "arco-iris bandeira"
+    "torre-tv camara"
+    "torre-tv crepusculo"
+    "arco-iris-chuva nuvens-alta"
+    "torre-vermelha nuvens-alta"
+    "santo crepusculo-fogo";
+}
+
+.galeria img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.foto-juscelino { grid-area: juscelino;}
+.foto-por-do-sol-vermelho { grid-area: por-do-sol-vermelho;}
+.foto-glory { grid-area: glory;}
+.foto-arco-iris { grid-area: arco-iris;}
+.foto-estrela { grid-area: estrela;}
+.foto-bandeira { grid-area: bandeira;}
+.foto-camara { grid-area: camara;}
+.foto-torre-tv { grid-area: torre-tv;}
+.foto-crepusculo { grid-area: crepusculo;}
+.foto-arco-iris-chuva { grid-area: arco-iris-chuva;}
+.foto-nuvens-alta { grid-area: nuvens-alta;}
+.foto-torre-vemerlha { grid-area: torre-vermelha;}
+.foto-santo { grid-area: santo;}
+.foto-crepusculo-fogo { grid-area: crepusculo-fogo;}
+
+
 
 @media (max-width: 600px) {
 
